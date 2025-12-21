@@ -1,0 +1,35 @@
+# OS固有ファイル
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 一時ファイル
+*.tmp
+*.log
+*.swp
+*.swo
+*~
+
+# エディタ固有ファイル
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 生成された記事（必要に応じて調整）
+# articles/**/*.md は含めたい場合はコメントアウト
+
+# 個人情報や機密情報
+*.key
+*.pem
+.env
+.env.local
+
+# バックアップファイル
+*.bak
+*.backup
+
