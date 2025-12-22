@@ -16,7 +16,10 @@
 - **参考文体**: @knowledge/style-samples/ (このディレクトリ内の全記事)
 
 ## 出力
-- 生成された記事は、`articles/(日付)_(テーマ名)/draft.md` というパスに保存してください。
+- 記事を執筆したら、`knowledge/outputs` 内に対応するタイトル「yyyy-mm-dd_タイトル」というフォルダを作成する
+- 執筆した記事は「draft.md」という名前で作成したフォルダ内に保存する
+- 執筆した記事を修正して、完成させるときには、同じフォルダ内に「article.md」という名前で新規ファイルを保存する
+- 例：`knowledge/outputs/2025-12-23-「節約」ってケチじゃない/draft.md`
 
 ## プロジェクト構造
 
@@ -30,8 +33,10 @@ writing-automation/
 ├── knowledge/                   # ナレッジベース (AIの記憶)
 │   ├── style-samples/           # 過去の良質な記事
 │   ├── inputs/                  # インプット情報
-│   └── outputs/                 # 過去の生成物
-└── articles/                    # 生成された記事の保存場所
+│   └── outputs/                 # 生成された記事の保存場所
+│       └── yyyy-mm-dd_タイトル/ # 記事ごとのフォルダ
+│           ├── draft.md         # AIが生成した下書き
+│           └── article.md      # 完成した記事
 ```
 
 詳細な使い方は `MANUAL.md` を参照してください。
