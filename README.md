@@ -16,10 +16,10 @@
 - **参考文体**: @knowledge/style-samples/ (このディレクトリ内の全記事)
 
 ## 出力
-- 記事を執筆したら、`knowledge/outputs` 内に対応するタイトル「yyyy-mm-dd_タイトル」というフォルダを作成する
-- 執筆した記事は「draft.md」という名前で作成したフォルダ内に保存する
-- 執筆した記事を修正して、完成させるときには、同じフォルダ内に「article.md」という名前で新規ファイルを保存する
-- 例：`knowledge/outputs/2025-12-23-「節約」ってケチじゃない/draft.md`
+- 記事を執筆したら、`knowledge/outputs` 内に「yyyy-mm-dd_タイトル」というフォルダを作成する
+- 執筆した原稿は「draft.md」という名前で作成したフォルダ内に保存する
+- 執筆した原稿を修正・完成させるときには、同じフォルダ内に「article.md」という名前で新規ファイルを保存する
+- 例：`knowledge/outputs/2025-12-23_節約ってケチじゃない/draft.md`
 
 ## プロジェクト構造
 
@@ -27,6 +27,7 @@
 writing-automation/
 ├── .cursor/                     # Cursor設定ディレクトリ
 │   └── rules/                   # ルール定義
+│       ├── 00_workflow/         # ⓪ 執筆ワークフロー
 │       ├── 10_writing-style/    # ① 文体・スタイル設定
 │       ├── 20_platform-rules/   # ② プラットフォーム特化ルール
 │       └── 30_content-quality/  # ③ コンテンツ品質基準
@@ -36,8 +37,7 @@ writing-automation/
 │   └── outputs/                 # 生成された記事の保存場所
 │       └── yyyy-mm-dd_タイトル/ # 記事ごとのフォルダ
 │           ├── draft.md         # AIが生成した下書き
-│           └── article.md      # 完成した記事
+│           └── article.md       # 完成した記事
 ```
 
 詳細な使い方は `MANUAL.md` を参照してください。
-

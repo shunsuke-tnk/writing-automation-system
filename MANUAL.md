@@ -28,6 +28,8 @@
 ライティングシステム/
 ├── .cursor/                     # Cursor設定ディレクトリ
 │   └── rules/                   # ルール定義
+│       ├── 00_workflow/         # ⓪ 執筆ワークフロー
+│       │   └── RULE.md
 │       ├── 10_writing-style/    # ① 文体・スタイル設定
 │       │   └── RULE.md
 │       ├── 20_platform-rules/   # ② プラットフォーム特化ルール

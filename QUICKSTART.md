@@ -25,24 +25,29 @@ cp ~/過去の記事3.md knowledge/style-samples/article_3.md
 
 ### 3. 最初の記事を生成
 
-`README.md` を開き、以下のプロンプトをCursorに入力します：
+Cursorのチャットに以下のように入力します：
 
 ```markdown
-すべての.cursor/rules/内のルールを厳格に遵守し、以下の条件でnote記事のドラフトを作成してください。
+@.cursor のルールに基づいて、記事を執筆してください。
+
+テーマ: @knowledge/inputs/2025-01-15_テーマ名.md
+```
+
+または、より詳しく指示したい場合：
+
+```markdown
+@.cursor のルールに基づいて、以下の条件でnote記事を執筆してください。
 
 - **テーマ**: [あなたのテーマ]
 - **読者ターゲット**: [想定する読者層]
 - **記事のゴール**: [読者が得られるもの]
 - **参考情報**: @knowledge/inputs/2025-01-15_テーマ名.md
-- **参考文体**: @knowledge/style-samples/
-
-生成された記事は、`articles/2025-01-15_テーマ名/draft.md` に保存してください。
 ```
 
 ## 次のステップ
 
 1. 生成された `draft.md` をレビューし、修正します
-2. 修正した内容を `final.md` として保存します
+2. 修正した内容を `article.md` として同じフォルダに新規保存します
 3. noteに投稿します
 4. レビューで気づいたことを `.cursor/rules/10_writing-style/RULE.md` に追加します
 
@@ -50,4 +55,3 @@ cp ~/過去の記事3.md knowledge/style-samples/article_3.md
 
 - 詳細な使い方: `MANUAL.md` を参照
 - トラブルシューティング: `MANUAL.md` の「トラブルシューティング」セクションを参照
-
