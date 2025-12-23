@@ -37,3 +37,4 @@ knowledge/outputs/yyyy-mm-dd_タイトル/
 - `draft.md` として保存する
 - フォルダ名は記事タイトルから適切に命名する
 
+
